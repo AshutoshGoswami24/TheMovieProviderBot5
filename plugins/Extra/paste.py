@@ -1,13 +1,13 @@
-# Don't Remove Credit @movie_file_20
-# Subscribe YouTube Channel For Amazing Bot @movie_file_20
-# Ask Doubt on telegram @KingVJ01
+
 
 import os
 import re
 import json
 import aiohttp
 import requests
+
 from pyrogram import Client, filters
+
 
 #Headers
 headers = {
@@ -39,16 +39,14 @@ async def p_paste(message, extension=None):
 
 
 
+
+
+
 @Client.on_message(filters.command(["tgpaste", "pasty", "paste"]))
 async def pasty(client, message):
     pablo = await message.reply_text("`Please wait...`")
     tex_t = message.text
-    if ' ' in message.text:
-        message_s = message.text.split(" ", 1)[1]
-    elif message.reply_to_message:
-        message_s = message.reply_to_message.text
-    else:
-        await message.reply("sorry no in put. please repy to a text or /paste with text")
+    message_s = tex_t
     if not tex_t:
         if not message.reply_to_message:
             await pablo.edit("`Only text and documents are supported.`")
