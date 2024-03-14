@@ -2,11 +2,12 @@
 from pyrogram import Client, filters
 import requests
 import random
-from info import API_ID, API_HASH, BOT_TOKEN, MY_BOT
+from info import API_ID, API_HASH, BOT_TOKEN,
 
 emojis = ["👍", "👎", "❤", "🔥", "🥰", "👏", "😁", "🤔", "🤯", "😱", "🤬", "😢", "🎉", "🤩", "🤮", "💩", "🙏", "👌", "🕊", "🤡", "🥱", "🥴", "😍", "🐳", "❤‍🔥", "🌚", "🌭", "💯", "🤣", "⚡", "🍌", "🏆", "💔", "🤨", "😐", "🍓", "🍾", "💋", "🖕", "😈", "😴", "😭", "🤓", "👻", "👨‍💻", "👀", "🎃", "🙈", "😇", "😨", "🤝", "✍", "🤗", "🫡", "🎅", "🎄", "☃", "💅", "🤪", "🗿", "🆒", "💘", "🙉", "🦄", "😘", "💊", "🙊", "😎", "👾", "🤷‍♂", "🤷", "🤷‍♀", "😡"]
 
-app = Client(MY_BOT, API_ID=API_ID, API_HASH=API_HASH, BOT_TOKEN=BOT_TOKEN)
+app = Client("fuzi_filter_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
+
 
 @app.on_message()
 async def react_to_message(client, message):
