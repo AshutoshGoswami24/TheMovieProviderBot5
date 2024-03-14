@@ -4,8 +4,6 @@ import random
 
 emojis = ["👍", "👎", "❤", "🔥", "🥰", "👏", "😁", "🤔", "🤯", "😱", "🤬", "😢", "🎉", "🤩", "🤮", "💩", "🙏", "👌", "🕊", "🤡", "🥱", "🥴", "😍", "🐳", "❤‍🔥", "🌚", "🌭", "💯", "🤣", "⚡", "🍌", "🏆", "💔", "🤨", "😐", "🍓", "🍾", "💋", "🖕", "😈", "😴", "😭", "🤓", "👻", "👨‍💻", "👀", "🎃", "🙈", "😇", "😨", "🤝", "✍", "🤗", "🫡", "🎅", "🎄", "☃", "💅", "🤪", "🗿", "🆒", "💘", "🙉", "🦄", "😘", "💊", "🙊", "😎", "👾", "🤷‍♂", "🤷", "🤷‍♀", "😡"]
 
-app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
-
 @app.on_message()
 async def react_to_message(client, message):
     chat_id = message.chat.id
@@ -14,7 +12,7 @@ async def react_to_message(client, message):
     # Choose a random emoji from the list
     random_emoji = random.choice(emojis)
     
-    url = f'https://api.telegram.org/bot{bot_token}/setMessageReaction'
+    url = f'https://api.telegram.org/bot{BOT_TOKEN}/setMessageReaction'
 
     # Parameters for the request
     params = {
