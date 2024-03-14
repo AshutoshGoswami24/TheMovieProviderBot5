@@ -14,7 +14,7 @@ async def react_to_message(client, message):
     # Choose a random emoji from the list
     random_emoji = random.choice(emojis)
     
-    url = f'https://api.telegram.org/bot{token}/setMessageReaction'
+    url = f'https://api.telegram.org/bot{bot_token}/setMessageReaction'
 
     # Parameters for the request
     params = {
