@@ -2,8 +2,16 @@ from pyrogram import Client, filters
 import requests
 import random
 
+api_id = 24248654 #--Add your Api Id here
+api_hash = 'API_HASH' #--Enter Api Hash Here
+
+token = 'BOT_TOKEN' #--Enter Bot Token Here.
+
 emojis = ["👍", "👎", "❤", "🔥", "🥰", "👏", "😁", "🤔", "🤯", "😱", "🤬", "😢", "🎉", "🤩", "🤮", "💩", "🙏", "👌", "🕊", "🤡", "🥱", "🥴", "😍", "🐳", "❤‍🔥", "🌚", "🌭", "💯", "🤣", "⚡", "🍌", "🏆", "💔", "🤨", "😐", "🍓", "🍾", "💋", "🖕", "😈", "😴", "😭", "🤓", "👻", "👨‍💻", "👀", "🎃", "🙈", "😇", "😨", "🤝", "✍", "🤗", "🫡", "🎅", "🎄", "☃", "💅", "🤪", "🗿", "🆒", "💘", "🙉", "🦄", "😘", "💊", "🙊", "😎", "👾", "🤷‍♂", "🤷", "🤷‍♀", "😡"]
 
+app = Client("my_bot", api_id=api_id, api_hash=api_hash, bot_token=token)
+
+@app.on_message()
 async def react_to_message(client, message):
     chat_id = message.chat.id
     message_id = message.id
@@ -11,7 +19,7 @@ async def react_to_message(client, message):
     # Choose a random emoji from the list
     random_emoji = random.choice(emojis)
     
-    url = f'https://api.telegram.org/bot{BOT_TOKEN}/setMessageReaction'
+    url = f'https://api.telegram.org/bot{token}/setMessageReaction'
 
     # Parameters for the request
     params = {
