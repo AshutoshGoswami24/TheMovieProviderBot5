@@ -1,4 +1,3 @@
-
 from pyrogram import Client, filters
 import requests
 import random
@@ -38,4 +37,6 @@ async def react_to_message(client, message):
         print(f"Failed to set reaction. Status code: {response.status_code}")
         print("Response content:", response.content)
     
-app.run()
+if __name__ == "__main__":
+    app.start()
+    app.run()
