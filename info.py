@@ -31,7 +31,7 @@ CODE = (environ.get('CODE', 'https://graph.org/file/f902a497c4a0bca289986.jpg'))
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'link4earn.com'))
 STREAM_API = (environ.get('STREAM_API','d69816f24d31e83c6ea9766452c39ee36a0901c5'))
-STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/beautyofthemovie/4'))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/c/1813787686/26'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
@@ -60,7 +60,7 @@ HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/beautyofthemovie/4') # Ho
 
 # Others
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'onepagelink.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '1fb1e56aa57d893927b06afea819b4f3419b282d)
+SHORTLINK_API = environ.get('SHORTLINK_API', '1fb1e56aa57d893927b06afea819b4f3419b282d')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
@@ -68,7 +68,7 @@ MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/') # Tutorial video link for opening shortlink website 
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/c/1813787686/17') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : MarselMovie')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '')) #Log channel id ( make sure bot is admin )
