@@ -29,8 +29,8 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/60e21e90fb96
 CODE = (environ.get('CODE', 'https://graph.org/file/f902a497c4a0bca289986.jpg'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'link4earn.com'))
-STREAM_API = (environ.get('STREAM_API','d69816f24d31e83c6ea9766452c39ee36a0901c5'))
+STREAM_SITE = (environ.get('STREAM_SITE', ''))
+STREAM_API = (environ.get('STREAM_API',''))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/c/1813787686/26'))
 
 # Admins, Channels & Users
