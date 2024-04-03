@@ -1,5 +1,5 @@
 from info import *
-from Biisal import *
+from Marsel import *
 from pyrogram import Client, filters
 from pyrogram.types import ChatPermissions
 
